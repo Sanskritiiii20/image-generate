@@ -3,7 +3,7 @@ from diffusers import StableDiffusionPipeline
 
 # Load the Stable Diffusion pipeline and set device to CPU
 pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4")
-pipe = pipe.to("cpu")  # Set to CPU for systems without GPU
+pipe = pipe.to("cpu") 
 
 app = Flask(__name__)
 
